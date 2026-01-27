@@ -18,18 +18,23 @@ const AboutSection = () => {
           {/* Main description card */}
           <div className="lg:col-span-2">
             <div className="glass-card p-8 h-full">
-              <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-8">
+              <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">
                 Analista de Dados com mais de <span className="text-accent font-bold">5 anos de experiência</span> atuando 
                 na interseção entre tecnologia, dados, contabilidade e processos de 
                 negócio, com forte vivência em ERPs corporativos, análise financeira 
                 e suporte à tomada de decisão.
               </p>
               
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Experiência consolidada na extração, tratamento e análise de dados operacionais e 
+                financeiros, utilizando SQL, Power BI, relatórios gerenciais e integração entre 
+                módulos de sistemas (compras, vendas, financeiro, controladoria).
+              </p>
+
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Minha expertise inclui extração e transformação de dados com SQL, 
-                criação de dashboards interativos no Power BI, automação de processos 
-                com Python e Excel VBA, além de integração de múltiplas fontes de dados 
-                para geração de insights estratégicos.
+                Background em Ciências Contábeis aliado à formação em Análise e Desenvolvimento 
+                de Sistemas, permitindo leitura profunda de dados fiscais, financeiros e operacionais, 
+                garantindo conformidade, consistência e valor analítico.
               </p>
 
               {/* Stats */}
@@ -55,8 +60,8 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-foreground mb-1">Formação</h3>
-                  <p className="text-sm text-muted-foreground">Ciência de Dados</p>
-                  <p className="text-xs text-muted-foreground/70">Em andamento</p>
+                  <p className="text-sm text-muted-foreground">Ciências Contábeis</p>
+                  <p className="text-xs text-muted-foreground/70">+ Análise de Sistemas</p>
                 </div>
               </div>
             </div>
@@ -67,9 +72,9 @@ const AboutSection = () => {
                   <Briefcase className="w-6 h-6 text-primary-glow" />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">Atuação</h3>
-                  <p className="text-sm text-muted-foreground">Business Intelligence</p>
-                  <p className="text-xs text-muted-foreground/70">Análise de Dados</p>
+                  <h3 className="font-display font-semibold text-foreground mb-1">Cargo Atual</h3>
+                  <p className="text-sm text-muted-foreground">Gerente de TI / Dados</p>
+                  <p className="text-xs text-muted-foreground/70">Grupo Nonato</p>
                 </div>
               </div>
             </div>
@@ -82,7 +87,7 @@ const AboutSection = () => {
                 <div>
                   <h3 className="font-display font-semibold text-foreground mb-1">Especialidade</h3>
                   <p className="text-sm text-muted-foreground">Power BI & SQL</p>
-                  <p className="text-xs text-muted-foreground/70">ETL & Automação</p>
+                  <p className="text-xs text-muted-foreground/70">ETL & ERP Analytics</p>
                 </div>
               </div>
             </div>

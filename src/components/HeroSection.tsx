@@ -1,18 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Database, LineChart, BarChart3, PieChart } from "lucide-react";
+import { ChevronDown, Database, LineChart, BarChart3, PieChart, MapPin } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const highlights = [
   "Especialista em extração de dados com SQL",
-  "Dashboards interativos e automatizados",
-  "Análise de dados para tomada de decisão",
-  "Integração de múltiplas fontes de dados",
+  "Dashboards interativos e automatizados com Power BI",
+  "Análise de dados financeiros e operacionais",
+  "Integração de múltiplas fontes de dados e ERPs",
 ];
 
 const techBadges = [
   { name: "Power BI", color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" },
   { name: "SQL", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
   { name: "Python", color: "bg-green-500/20 text-green-400 border-green-500/30" },
-  { name: "Excel", color: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30" },
+  { name: "Excel Avançado", color: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30" },
   { name: "DAX", color: "bg-orange-500/20 text-orange-400 border-orange-500/30" },
   { name: "ETL", color: "bg-purple-500/20 text-purple-400 border-purple-500/30" },
 ];
@@ -29,9 +30,11 @@ const HeroSection = () => {
           {/* Profile Photo */}
           <div className="relative mb-8 animate-fade-in">
             <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-primary/40 animate-pulse-glow">
-              <div className="w-full h-full bg-gradient-to-br from-primary/30 to-secondary flex items-center justify-center">
-                <span className="text-5xl md:text-6xl font-display font-bold text-primary/50">UM</span>
-              </div>
+              <img 
+                src={profilePhoto} 
+                alt="Utemberg Moisés"
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Status indicator */}
             <div className="absolute bottom-2 right-2 w-5 h-5 bg-accent rounded-full border-4 border-background" />
@@ -44,9 +47,15 @@ const HeroSection = () => {
           </h1>
 
           {/* Title Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-2 animate-fade-in" style={{ animationDelay: "0.15s" }}>
             <BarChart3 className="w-4 h-4 text-primary-glow" />
             <span className="text-sm font-medium text-foreground">Analista de Dados</span>
+          </div>
+
+          {/* Location */}
+          <div className="flex items-center gap-2 text-muted-foreground text-sm mb-8 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+            <MapPin className="w-4 h-4" />
+            <span>Mossoró – Rio Grande do Norte, Brasil</span>
           </div>
 
           {/* Highlights List */}
