@@ -51,7 +51,7 @@ const EducationSection = () => {
   const displayedCerts = showAllCerts ? certifications : certifications.slice(0, 6);
 
   return (
-    <section className="py-24 relative">
+    <section id="educacao" className="py-24 relative">
       <div className="absolute inset-0 bg-glow opacity-30" />
       
       <div className="container relative z-10">
