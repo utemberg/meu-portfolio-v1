@@ -27,7 +27,7 @@ const AboutSection = () => {
               
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Experiência consolidada na extração, tratamento e análise de dados operacionais e 
-                financeiros, utilizando SQL, Power BI, relatórios gerenciais e integração entre 
+                financeiros, utilizando SQL, Excel, relatórios gerenciais e integração entre 
                 módulos de sistemas (compras, vendas, financeiro, controladoria).
               </p>
 
