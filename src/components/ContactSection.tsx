@@ -1,7 +1,14 @@
-import { Github, Instagram, Linkedin, Mail, MessageCircle, ArrowUpRight } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, MessageCircle, ArrowUpRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const contacts = [
+  {
+    icon: Phone,
+    label: "WhatsApp",
+    value: "+55 84 9 9156-3434",
+    link: "https://wa.me/5584991563434",
+    color: "hover:border-green-400",
+  },
   {
     icon: Github,
     label: "Github",
@@ -34,7 +41,7 @@ const contacts = [
 
 const ContactSection = () => {
   return (
-    <section className="py-24 relative">
+    <section id="contato" className="py-24 relative">
       <div className="absolute inset-0 bg-glow opacity-40" />
       
       <div className="container relative z-10">
