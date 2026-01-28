@@ -4,22 +4,22 @@ const skillCategories = [
   {
     icon: BarChart3,
     title: "Dados & BI",
-    skills: ["Power BI", "SQL", "Python", "Excel Avançado", "Metabase", "DataViz"],
+    skills: ["Power BI", "SQL", "Python", "Excel Avançado"],
   },
   {
     icon: Workflow,
     title: "ETL & Integração",
-    skills: ["ETL via SQL", "Python Pipelines", "Google Sheets", "APIs REST", "Supermetrics"],
+    skills: ["ETL via SQL", "Python Pipelines", "Google Sheets"],
   },
   {
     icon: Database,
-    title: "CRM & ERP",
-    skills: ["SAP", "Zoho CRM", "N-ERP", "ERPs Corporativos", "Automação"],
+    title: "ERP",
+    skills: ["ERPs Corporativos", "Automação", "Implementação de Processos"],
   },
   {
     icon: LineChart,
     title: "Analytics & KPIs",
-    skills: ["Google Analytics", "Adobe Analytics", "GTM", "Métricas de Marketing", "Relatórios"],
+    skills: ["Métricas de Vendas", "Relatórios", "Performance de Equipe"],
   },
 ];
 
