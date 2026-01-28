@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const experiences = [
   {
-    title: "Gerente de TI / Dados",
+    title: "Gerente de TI | Dados",
     company: "Grupo Nonato",
     period: "Fev/2024 – Atual",
     location: "Mossoró – RN",
@@ -25,11 +25,11 @@ const experiences = [
     description: "Atuação com dados contábeis, fiscais e financeiros, suporte analítico, geração de obrigações acessórias e treinamento de clientes.",
   },
   {
-    title: "Assistente de TI / Dados",
+    title: "Assistente de TI | Dados",
     company: "Grupo Nonato",
     period: "Nov/2020 – Mar/2022",
     location: "Mossoró – RN",
-    description: "Suporte a ERP, análise de métricas operacionais, conciliações contábeis, contas a pagar e apoio à gestão com dados integrados.",
+    description: "Suporte a ERP, análise de métricas operacionais, conciliações contábeis, contas a pagar e apoio à gestão com dados integrados, desenvolvimento de planilhas para análises de indicadores operacionais.",
   },
 ];
 
