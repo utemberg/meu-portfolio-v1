@@ -38,7 +38,7 @@ const ExperienceSection = () => {
   const displayedExperiences = showAll ? experiences : experiences.slice(0, 2);
 
   return (
-    <section className="py-24 relative">
+    <section id="experiencia" className="py-24 relative">
       <div className="container relative z-10">
         <h2 className="section-title mb-12">Experiência Profissional</h2>
         
