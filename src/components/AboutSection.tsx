@@ -2,7 +2,7 @@ import { Briefcase, GraduationCap, Award } from "lucide-react";
 
 const stats = [
   { value: "5+", label: "Anos de Experiência", color: "text-accent" },
-  { value: "50+", label: "Dashboards Criados", color: "text-primary-glow" },
+  { value: "30+", label: "Dashboards Criados", color: "text-primary-glow" },
   { value: "20+", label: "Clientes Atendidos", color: "text-yellow-400" },
 ];
 
@@ -32,8 +32,8 @@ const AboutSection = () => {
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Background em Ciências Contábeis aliado à formação em Análise e Desenvolvimento 
-                de Sistemas, permitindo leitura profunda de dados fiscais, financeiros e operacionais, 
+                Bacharelado em Ciências Contábeis aliado à formação em Análise e Desenvolvimento 
+                de Sistemas, e Pós-Graduando em Análise de Dados com experiência em leitura profunda de dados fiscais, financeiros e operacionais, 
                 garantindo conformidade, consistência e valor analítico.
               </p>
 
@@ -60,8 +60,9 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-foreground mb-1">Formação</h3>
-                  <p className="text-sm text-muted-foreground">Ciências Contábeis</p>
-                  <p className="text-xs text-muted-foreground/70">+ Análise de Sistemas</p>
+                  <p className="text-sm text-muted-foreground">Pós-Graduando em Análise de Dados</p>
+                  <p className="text-xs text-muted-foreground/70">+ Ciências Contábeis</p>
+                  <p className="text-xs text-muted-foreground/70">+ Análise e Desenvolvimento de Sistemas</p>
                 </div>
               </div>
             </div>
@@ -73,7 +74,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-foreground mb-1">Cargo Atual</h3>
-                  <p className="text-sm text-muted-foreground">Gerente de TI / Dados</p>
+                  <p className="text-sm text-muted-foreground">Gerente de TI | Dados</p>
                   <p className="text-xs text-muted-foreground/70">Grupo Nonato</p>
                 </div>
               </div>
@@ -86,7 +87,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-foreground mb-1">Especialidade</h3>
-                  <p className="text-sm text-muted-foreground">Power BI & SQL</p>
+                  <p className="text-sm text-muted-foreground">SQL | Excel Avançado | Power Bi</p>
                   <p className="text-xs text-muted-foreground/70">ETL & ERP Analytics</p>
                 </div>
               </div>
