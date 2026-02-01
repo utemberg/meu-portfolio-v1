@@ -49,7 +49,7 @@ const Navbar = () => {
           }}
           className="flex items-center"
         >
-          <img src={logo} alt="UM Logo" className="h-10 w-auto" />
+          <img src={logo} alt="UM Logo" className="h-14 w-auto" />
         </a>
 
         {/* Desktop Navigation */}
