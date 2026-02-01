@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Experiência", href: "#experiencia" },
   { label: "Educação", href: "#educacao" },
   { label: "Habilidades", href: "#habilidades" },
-  { label: "Projetos", href: "#projects" },
+  { label: "Projetos", href: "#projetos" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -23,6 +23,16 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    setIsOpen(false);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -30,7 +40,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="font-display text-xl font-bold text-gradient">
+        <a 
+          href="#" 
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="font-display text-xl font-bold text-gradient"
+        >
           UM
         </a>
 
@@ -40,6 +57,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-primary/10"
             >
               {link.label}
@@ -66,7 +84,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="px-4 py-3 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-primary/10"
               >
                 {link.label}
