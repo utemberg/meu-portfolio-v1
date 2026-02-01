@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Sobre", href: "#sobre-mim" },
@@ -46,9 +47,9 @@ const Navbar = () => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="font-display text-xl font-bold text-gradient"
+          className="flex items-center"
         >
-          UM
+          <img src={logo} alt="UM Logo" className="h-10 w-auto" />
         </a>
 
         {/* Desktop Navigation */}
