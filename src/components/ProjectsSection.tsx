@@ -3,11 +3,11 @@ import { ExternalLink, BarChart3, TrendingUp, Package, DollarSign, ShoppingCart,
 
 const projects = [
   {
-  image: "/gifs/dashboard_vendas.gif",
-  title: "Dashboard Vendas",
-  description: "Dashboard interativo de vendas com KPIs estratégicos e visão gerencial para tomada de decisão.",
-  tools: ["Power BI", "SQL", "Excel"],
-  link: "https://app.powerbi.com/reportEmbed?reportId=dd982cea-eb4b-4da7-bf95-c3e3c139edb2&autoAuth=true&ctid=659ce2b8-0714-4198-8c38-dc9b60aabb57",
+    image: "/gifs/dashboard_vendas.gif",
+    title: "Dashboard Vendas",
+    description: "Dashboard interativo de vendas com KPIs estratégicos e visão gerencial para tomada de decisão.",
+    tools: ["Power BI", "SQL", "Excel"],
+    link: "https://app.powerbi.com/reportEmbed?reportId=dd982cea-eb4b-4da7-bf95-c3e3c139edb2&autoAuth=true&ctid=659ce2b8-0714-4198-8c38-dc9b60aabb57",
   },
   {
     icon: TrendingUp,
@@ -68,22 +68,35 @@ const ProjectsSection = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
               key={project.title}
               className="glass-card overflow-hidden group hover:border-primary/40 transition-all duration-300 flex flex-col"
             >
-              {/* Project Image Placeholder */}
+              {/* Project Visual (GIF ou Ícone) */}
               <div className="aspect-video bg-gradient-to-br from-primary/15 to-secondary flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-80" />
-                <project.icon className="w-16 h-16 text-primary/30 relative z-10 group-hover:scale-110 transition-transform duration-300" />
                 
-                {/* Decorative grid */}
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : project.icon ? (
+                  <project.icon className="w-16 h-16 text-primary/30 relative z-10 group-hover:scale-110 transition-transform duration-300" />
+                ) : null}
+
+                <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-card/20 to-transparent" />
+
                 <div className="absolute inset-0 opacity-10">
-                  <div className="h-full w-full" style={{
-                    backgroundImage: 'linear-gradient(hsl(var(--primary) / 0.3) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary) / 0.3) 1px, transparent 1px)',
-                    backgroundSize: '20px 20px'
-                  }} />
+                  <div
+                    className="h-full w-full"
+                    style={{
+                      backgroundImage:
+                        'linear-gradient(hsl(var(--primary) / 0.3) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary) / 0.3) 1px, transparent 1px)',
+                      backgroundSize: '20px 20px',
+                    }}
+                  />
                 </div>
               </div>
               
@@ -95,7 +108,6 @@ const ProjectsSection = () => {
                   {project.description}
                 </p>
                 
-                {/* Tool badges */}
                 <div className="flex flex-wrap gap-2 mb-5">
                   {project.tools.map((tool) => (
                     <span
