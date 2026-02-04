@@ -8,7 +8,7 @@ const projects = [
     title: "Dashboard Vendas",
     description: "Dashboard interativo de vendas com KPIs estratégicos e visão gerencial para tomada de decisão.",
     tools: ["Power BI", "SQL", "Excel"],
-    link: "https://app.powerbi.com/reportEmbed?reportId=dd982cea-eb4b-4da7-bf95-c3e3c139edb2&autoAuth=true&ctid=659ce2b8-0714-4198-8c38-dc9b60aabb57",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMTIxNTA5NmEtMGIzYS00MGQxLTlmZTctYTA1MWZhYjIzYzM4IiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9",
   },
   {
     icon: TrendingUp,
