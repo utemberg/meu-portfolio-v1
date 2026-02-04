@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, BarChart3, TrendingUp, Package, DollarSign, ShoppingCart, FolderKanban } from "lucide-react";
+import dashboardVendasGif from "@/assets/dashboard_vendas.gif";
 
 const projects = [
   {
-    image: "/gifs/dashboard_vendas.gif",
+    image: dashboardVendasGif,
     title: "Dashboard Vendas",
     description: "Dashboard interativo de vendas com KPIs estratégicos e visão gerencial para tomada de decisão.",
     tools: ["Power BI", "SQL", "Excel"],
