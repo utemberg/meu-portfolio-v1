@@ -7,7 +7,7 @@ const projects = [
     title: "Dashboard Logística",
     description: "Painel completo para gestão logística com indicadores de performance de entregas, rotas otimizadas e controle de frota.",
     tools: ["Power BI", "SQL", "Excel"],
-    link: "#",
+    link: "https://app.powerbi.com/reportEmbed?reportId=dd982cea-eb4b-4da7-bf95-c3e3c139edb2&autoAuth=true&ctid=659ce2b8-0714-4198-8c38-dc9b60aabb57",
   },
   {
     icon: TrendingUp,
